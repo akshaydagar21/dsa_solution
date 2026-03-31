@@ -6,10 +6,10 @@ public:
 
         while(l<=e){
             int mid = l+(e-l)/2;
-            if(nums[l]<=nums[mid]){
+            if(nums[e]<nums[mid]){
                 ans = min(ans,nums[l]);
                 l = mid+1;
-            }else if(nums[mid]<= nums[e]){
+            }else{
                 ans = min(ans,nums[mid]);
                 e = mid-1;
             }
