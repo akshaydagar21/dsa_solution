@@ -12,7 +12,7 @@ public:
             if(mid%2==1)    mid--;
 
             if(nums[mid]==nums[mid+1])
-                s += 2;
+                s =mid+ 2;
             else
                 e = mid;
             
